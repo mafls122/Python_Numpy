@@ -28,22 +28,10 @@ print(a)
 b = np.zeros_like(a)  # 기존 배열 값을 0으로 대입 후 생성, dtype도 변경가능, np.ones_like(), np.full_like() 도 있다.
 print(b)
 
-
-# test) 지정된 배열값을 변경해 보자
-
-a = np.arange(6).reshape(2,3)
-print(a)
-
-b = np.zeros_like(a)
-print(b)
-
-# 슬라이스를 이용해서 값을 변경해 보자
-a[ : , : ] = 0 #앞에는 행 뒤에는 열
-print(a)
-
-a = a.astype(np.float)  #dtype float로 변경, int,str도 가능
-a[:] = 1.0
-print(a)   #원래 a의 dtype이 정수여서 정수로 나옴 dtype값을 바꿔줘야함!
+# 4. dtype 변경 : astype()
+ab = np.arange(5)
+ab = a.astype(np.float)  # dtype을 float로 변경, int, str도 가능
+print(ab)
 
 
 
