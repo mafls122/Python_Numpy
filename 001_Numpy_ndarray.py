@@ -33,5 +33,17 @@ ab = np.arange(5)
 ab = a.astype(np.float)  # dtype을 float로 변경, int, str도 가능
 print(ab)
 
+# 5. 차원의 수 : ndim, 차원의 크기 : shape, 전체 요소의 수 : size, 다차원의 첫번째 차원의 길이 : len()
+a_1d = np.arange(10)
+print(a_1d)
+
+a_2d = np.arange(9).reshape((3, 3))  # 2차원
+print(a_2d)
+print(a_2d.ndim)  # 2 출력
+
+a_3d = np.arange(24).reshape((2, 3, 4))  # 3차원
+print(a_3d)
+print(a_3d.ndim, a_3d.shape, a_3d.size)  # 차원 : 3, 크기 : (2, 3, 4), 요소 수 : 24
+
 
 
