@@ -30,7 +30,7 @@ print(b)
 
 # 4. dtype 변경 : astype()
 ab = np.arange(5)
-ab = a.astype(np.float)  # dtype을 float로 변경, int, str도 가능
+ab = ab.astype(np.float)  # dtype을 float로 변경, int, str도 가능
 print(ab)
 
 # 5. 차원의 수 : ndim, 차원의 크기 : shape, 전체 요소의 수 : size, 다차원의 첫번째 차원의 길이 : len()
